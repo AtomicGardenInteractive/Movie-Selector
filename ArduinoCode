@@ -1,0 +1,29 @@
+
+#include <LiquidCrystal.h>
+
+func start();
+	letterbox_Request()
+
+func loop();
+	if button pressed:
+		gen_film()
+		lcd_display()
+		
+
+
+func lcd_display(FilmName:array[], FilmLength:[]);
+	lcd.clear()
+	lcd.setCursor(col,row)
+	lcd.print(FilmName)
+	lcd.setCursor(col,row)
+	lcd.print(FilmLength)
+
+func gen_film();
+	FilmInstance = randInt().letterboxArray[]
+	FilmInstance.FilmName
+	FilmInstance.FilmLength
+	return FilmLength, FilmName
+
+func letterbox_Request();
+	api shit = FilmInstance
+	
